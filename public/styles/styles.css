@@ -106,6 +106,12 @@ a, a:active, a:hover, a:focus {
   color: #303030;
 }
 
+h2 {
+  font-family: 'proxima_nova_rgregular';
+  font-size: 32px;
+  color: #212326;
+}
+
 /***************************
 ****************************
 Bottons Styles
@@ -172,6 +178,70 @@ Bottons Styles
   top: 0;
   width: 153px;
   z-index: 2;
+
+  transition:.1s;
+  animation:play-pulse 2s infinite linear;
+  -webkit-animation:play-pulse 2s infinite linear;
+  -moz-animation:play-pulse 2s infinite linear;
+  -ms-animation:play-pulse 2s infinite linear;
+  -o-animation:play-pulse 2s infinite linear
+}
+
+.btn-3-left,
+.btn-3-right {
+  background: url("../images/btn-3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  height: 40px;
+  padding: 0;
+  width: 40px;
+}
+
+.btn-3-left {
+  background-position: 0 0;
+}
+
+.btn-3-left:hover {
+  background-position: 0 -40px;
+}
+
+.btn-3-right {
+  background-position: 0 -80px;
+}
+
+.btn-3-right:hover {
+  background-position: 0 -120px;
+}
+
+.btn-4-wrapper {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 56px;
+  width: 56px;
+}
+
+.btn-4-wrapper a {
+  background: url("../images/btn-4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 33px;
+  left: 50%;
+  margin-left: -16.6px;
+  margin-top: -16.5px;
+  position: absolute;
+  top: 50%;
+  width: 33px;
+  z-index: 3;
+}
+
+.btn-4-wrapper a + span {
+  background: url("../images/btn-4-circle.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  height: 56px;
+  width: 56px;
 
   transition:.1s;
   animation:play-pulse 2s infinite linear;
@@ -284,4 +354,155 @@ Home Video Styles
   left: 50%;
   margin-left: -76.5px;
   top: 245px;
+}
+
+/***************************
+****************************
+Gallery Styles
+****************************
+***************************/
+#gallery {
+  padding-bottom: 40px;
+  padding-top: 68px;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#thumbnails {
+  border-top: 1px solid #d9dadb;
+  background-color: #f4f5f6;
+  height: 173px;
+}
+
+#thumbnails ul {
+  margin: 0
+}
+
+#thumbnails li {
+  background: url("../images/sep-1.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+  height: 173px;
+  line-height: 173px;
+  text-align: center;
+  width: 20%;
+  cursor: pointer;
+}
+
+#thumbnails li:last-child {
+  background: none;
+}
+
+#thumbnails li img {
+  opacity: 0.4;
+}
+
+#thumbnails li.active {
+  background: 
+  url("../images/sep-1.png") no-repeat 100% 50%,
+  url("../images/arrow-3.png") no-repeat 50% 0;
+}
+
+#thumbnails li.active img {
+  opacity: 1;
+}
+
+#thumbnails .btn-3-left,
+#thumbnails .btn-3-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
+#thumbnails .btn-3-left {
+  left: 0;
+}
+
+#thumbnails .btn-3-right {
+  right: 0;
+}
+
+.gallery-image {
+  text-align: center;
+  display: none;
+}
+
+.gallery-image.active {
+  display: block;
+}
+
+.dot-1-gallery-3 {
+  left: auto;
+  right: 452px;
+  top: 175px;
+}
+
+.dot-2-gallery-3 {
+  left: 461px;
+  top: 151px;
+}
+
+.dot-3-gallery-3 {
+  left: 475px;
+  top: 330px;
+}
+
+.dot-4-gallery-3 {
+  left: auto;
+  right: 475px;
+  top: 320px;
+}
+
+.dot-5-gallery-3 {
+  bottom: 90px;
+  left: 50%;
+  margin-left: -28px;
+  top: auto;
+}
+
+.text-gallery {
+  visibility: hidden;
+  position: absolute;
+  width: 205px;
+}
+
+.text-gallery.current {
+  visibility: visible;
+}
+
+.text-gallery p {
+  background: url("../images/icon-2.png") no-repeat 0 5px;
+  line-height: 20px;
+  margin: 0;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.text-3-gallery-3 {
+  left: 121px;
+  top: 255px;
+}
+
+.line-container {
+  position: absolute;
+  transition: width 1s ease 0s;
+}
+
+.line-container .connection-line {
+  background: none repeat scroll 0 0 #9e9e9c;
+  height: 1px;
+  transition: width 0.15s linear 0.38s;
+  width: 0;
+}
+
+.text-3-gallery-3.current .line-container .connection-line {
+  transition: width 0.15s linear 0s;
+  width: 100%;
+}
+
+.text-3-gallery-3 .line-container {
+  right: -171px;
+  top: 40%;
+  width: 187px;
 }
