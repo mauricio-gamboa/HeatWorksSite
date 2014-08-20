@@ -264,15 +264,14 @@ Header Styles
 ***************************/
 
 header {
-  background: 
-  url("../images/g-1.png") repeat-x scroll 0 100%,
-  url("../images/t-1.png") repeat 0 0;
+  background: url("../images/g-1.png") repeat-x scroll 0 100%, url("../images/t-1.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
   height: 89px;
   left: 0;
   padding-bottom: 6px;
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 header .logo {
@@ -325,6 +324,60 @@ header .ht-nav li a {
 
 header .ht-nav li.active a {
   background: url("../images/arrow-1.png") no-repeat 50% 100%;
+}
+
+.mobile-nav-controller {
+  height: 83px;
+  overflow: hidden;
+}
+
+.mobile-nav-controller > * {
+  margin-top: 24px;
+  float: left;
+}
+
+.open-mobile-nav {
+  background: url("../images/open-mobile-nav.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 35px;
+  width: 43px;
+  cursor: pointer;
+}
+
+.open-mobile-nav:hover {
+  background-position: 0 -35px;
+}
+
+.mobile-nav-controller .sep {
+  margin: 0 17px;
+  width: 1px;
+  height: 83px;
+  background-color: #e9e9e9;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav ul {
+  background: url("../images/t-6.png") repeat 0 0;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  border-bottom: 1px solid #d33e45;
+}
+
+.mobile-nav ul a {
+  background: url("../images/arrow-4.png") no-repeat 98% 50%;
+  display: block;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 0 25px;
+  line-height: 52px;
+}
+
+.mobile-nav ul a:hover {
+  background-color: #d33e45;
 }
 
 /***************************
