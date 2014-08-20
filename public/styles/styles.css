@@ -303,6 +303,10 @@ header .ht-nav li {
   line-height: 83px;
 }
 
+header .ht-nav li:last-child {
+  margin-right: 0;
+}
+
 header .ht-nav li:first-child {
   margin-left: 0;
 }
@@ -998,4 +1002,8 @@ Savings Uses Styles
 .savings-inner-tabs .savings-inner-links li.active a {
   background-color: #b6bcc1;
   color: #FFFFFF;
+}
+
+.savings-inner-tabs .tab-pane > img {
+  width: 100%;
 }

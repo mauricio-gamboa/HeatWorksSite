@@ -6,4 +6,50 @@
   .show-m {
     display: block;
   }
+
+  .use-description {
+    width: 318px;
+  }
+
+  .use-image {
+    width: 596px;
+  }
+
+  #uses-tabs-links ul li a {
+    padding: 17px 30px 0;
+  }
+
+  .savings-inner-tabs {
+    width: 620px;
+  }
+
+  .savings-description {
+    padding-right: 0;
+    width: 281px;
+  }
+
+  .buy-cta {
+    padding: 0 42px;
+  }
+
+  .dot-1-gallery-3 {
+    right: 352px;
+    top: 176px;
+  }
+
+  .dot-2-gallery-3 {
+    left: 365px;
+  }
+
+  .dot-3-gallery-3 {
+    left: 380px;
+  }
+
+  .dot-4-gallery-3 {
+    right: 372px;
+  }
+
+  .text-3-gallery-3 {
+    left: 22px;
+  }
 }
