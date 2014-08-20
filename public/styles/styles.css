@@ -88,7 +88,7 @@ body {
 .show-xs,
 .show-s,
 .show-m,
-.show-xl {
+.show-l {
   display: none;
 }
 
@@ -104,6 +104,11 @@ a, a:active, a:hover, a:focus {
   outline: none;
   text-decoration: none;
   color: #303030;
+}
+
+.btn:active, 
+.btn.active {
+  box-shadow: none;
 }
 
 h2 {
@@ -553,6 +558,7 @@ Uses Tabs Styles
 #uses-tabs p strong {
   font-weight: normal;
   font-family: 'open_sanssemibold';
+  font-size: 16px;
 }
 
 #uses-tabs p:last-child {
@@ -867,7 +873,11 @@ footer .social {
 
 #bottom ul li {
   float: left;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+#bottom ul li:first-child {
+  margin-left: 0;
 }
 
 /***************************
@@ -957,6 +967,7 @@ Savings Uses Styles
 
 .savings-description p strong {
   font-family: 'open_sanssemibold';
+  font-size: 16px;
   font-weight: normal;
 }
 

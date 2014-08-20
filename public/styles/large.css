@@ -1,2 +1,9 @@
 @media (min-width: 1201px) {
+	.hide-l {
+		display: none !important;
+	}
+
+	.show-l {
+		display: block;
+	}
 }
