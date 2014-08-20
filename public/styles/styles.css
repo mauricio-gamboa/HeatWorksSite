@@ -372,9 +372,8 @@ Gallery Styles
 }
 
 #thumbnails {
-  border-top: 1px solid #d9dadb;
-  background-color: #f4f5f6;
-  height: 173px;
+  background: url("../images/g-2.png") repeat-x 0 0 #f4f5f6;
+  height: 174px;
 }
 
 #thumbnails ul {
@@ -505,4 +504,236 @@ Gallery Styles
   right: -171px;
   top: 40%;
   width: 187px;
+}
+
+/***************************
+****************************
+Uses Tabs Styles
+****************************
+***************************/
+
+#uses-tabs-links {
+  background: url("../images/bg-2.png") repeat-x 0 0;
+  height: 130px;
+}
+
+#uses-tabs-links ul {
+  margin: 0;
+}
+
+#uses-tabs-links ul li {
+  float: left;
+  width: 20%;
+}
+
+#uses-tabs-links ul li a {
+  font-family: 'proxima_novasemibold';
+  height: 130px;
+  border-bottom: 12px solid #FFFFFF;
+  display: block;
+  text-align: center;
+  color: #5e6163;
+  text-transform: uppercase;
+}
+
+#uses-tabs-links ul li.active a {
+  color: #FFFFFF;
+  background-color: #88b9f0;
+  border-bottom: 12px solid #88b9f0;
+}
+
+/***************************
+****************************
+Buy CTA Styles
+****************************
+***************************/
+#buy-cta {
+  background: url("../images/bg-3.png") repeat scroll center top / cover rgba(0, 0, 0, 0);
+  height: 651px;
+  text-align: center;
+  padding-top: 75px;
+  color: #ffffff;
+}
+
+#buy-cta h2 {
+  font-family: 'open_sanslight';
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+
+.buy-cta {
+  float: left;
+  width: 33.33%;
+  font-size: 16px;
+  padding: 0 75px;
+}
+
+.buy-cta img {
+  margin-bottom: 20px;
+}
+
+.buy-cta h4 {
+  font-family: 'open_sanssemibold';
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.buy-cta p {
+  line-height: 26px;
+  margin: 0;
+}
+
+#buy-cta h2 + div {
+
+}
+
+.cta-btn {
+  background: url("../images/t-2.png") no-repeat 0 0;
+  border-radius: 5px;
+  width: 378px;
+  height: 69px;
+  line-height: 69px;
+  margin: 65px auto 0 auto;
+}
+
+.cta-btn .my-btn-1 {
+  font-size: 18px;
+  width: 166px;
+  height: 47px;
+  margin-left: 19px;
+}
+
+/***************************
+****************************
+Footer Styles
+****************************
+***************************/
+footer {
+  background: url("../images/footer-bg.png") repeat-x 0 100%;
+  padding-bottom: 64px;
+  padding-top: 54px;
+}
+
+footer h5 {
+  color: #9ca5ae;
+  font-family: 'open_sanssemibold';
+  font-size: 13px;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+input[type="text"], 
+input[type="email"] {
+  background: url("../images/t-3.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  border-radius: 5px;
+  height: 34px;
+  padding: 0;
+}
+
+.letter input[type="text"], 
+.letter input[type="email"] {
+  background-color: #f2f5f7;
+  border-radius: 5px;
+  color: #9ca5ae;
+  font-size: 13px;
+  height: 38px;
+  margin-right: 16px;
+  padding: 0 15px;
+  width: 255px;
+}
+
+footer .my-btn-1 {
+  border: medium none;
+  height: 38px;
+  line-height: 38px;
+  width: 114px;
+}
+
+footer .social {
+  float: right;
+}
+
+.social ul {
+  margin: 0;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.social li:last-child {
+  margin: 0;
+}
+
+.social a {
+  background: url("../images/social-icons.png") no-repeat 0 0;
+  display: block;
+  height: 36px;
+  width: 36px;
+  text-indent: -9999px;
+}
+
+.social a.fb {
+  background-position: 0 0;
+}
+
+.social a.fb:hover {
+  background-position: 0 -36px;
+}
+
+.social .tw {
+  background-position: 0 -72px;
+}
+
+.social .tw:hover {
+  background-position: 0 -108px;
+}
+
+.social .vm {
+  background-position: 0 -144px;
+}
+
+.social .vm:hover {
+  background-position: 0 -180px;
+}
+
+.social .yt {
+  background-position: 0 -216px;
+}
+
+.social .yt:hover {
+  background-position: 0 -252px;
+}
+
+.footer-wrapper {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+#bottom {
+  margin-bottom: 35px;
+}
+
+#bottom,
+#bottom a {
+  color: #9ca5ae;
+  font-size: 12px;
+}
+
+#bottom a:hover {
+  text-decoration: underline;
+}
+
+#bottom ul {
+  margin: 0;
+  overflow: hidden;
+}
+
+#bottom ul li {
+  float: left;
+  margin-left: 15px;
 }

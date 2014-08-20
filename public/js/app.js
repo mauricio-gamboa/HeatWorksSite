@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('xublime', ['ngRoute']).
+angular.module('heatWorks', ['ngRoute']).
 
 config(function ($routeProvider) {
   
