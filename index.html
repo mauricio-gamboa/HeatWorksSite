@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1 class="logo pull-left"><a href="">HeatWorks Model 1</a></h1>
-          <nav class="hide-s">
+          <nav class="hide-s hide-xs">
             <ul class="ht-nav pull-right">
               <li class="active"><a href="">Home</a></li>
               <li><a href="">Our Technology</a></li>
@@ -54,22 +54,29 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h2>The World's First Digital Water Heater</h2>
             <div class="gallery-image" ng-repeat="thumbnail in thumbnails" ng-class="{active: activeThumbnail == thumbnail}">
-              <img src="public/images/gallery-1.png" alt="">
+              <div class="gallery-image-wrapper">
 
-              <div class="btn-4-wrapper dot dot-1-gallery-3" ng-mouseover="hoverIn(1,3)" ng-mouseleave="hoverOut(1,3)"><a href=""></a><span></span></div>
-              <div class="btn-4-wrapper dot dot-2-gallery-3" ng-mouseover="hoverIn(2,3)" ng-mouseleave="hoverOut(2,3)"><a href=""></a><span></span></div>
-              <div class="btn-4-wrapper dot dot-3-gallery-3" ng-mouseover="hoverIn(3,3)" ng-mouseleave="hoverOut(3,3)"><a href=""></a><span></span></div>
-              <div class="btn-4-wrapper dot dot-4-gallery-3" ng-mouseover="hoverIn(4,3)" ng-mouseleave="hoverOut(4,3)"><a href=""></a><span></span></div>
-              <div class="btn-4-wrapper dot dot-5-gallery-3" ng-mouseover="hoverIn(5,3)" ng-mouseleave="hoverOut(5,3)"><a href=""></a><span></span></div>
+                <!-- Product Image -->
+                <img src="public/images/gallery-1.png" alt="">
 
-              <div class="text-gallery text-3-gallery-3">
-                <div class="line-container">
-                  <div class="connection-line"></div>
+                <!-- These are the dots, the position is adjusted in CSS -->
+                <div class="btn-4-wrapper dot dot-1-gallery-3" ng-mouseover="hoverIn(1,3)" ng-mouseleave="hoverOut(1,3)"><a href=""></a><span></span></div>
+                <div class="btn-4-wrapper dot dot-2-gallery-3" ng-mouseover="hoverIn(2,3)" ng-mouseleave="hoverOut(2,3)"><a href=""></a><span></span></div>
+                <div class="btn-4-wrapper dot dot-3-gallery-3" ng-mouseover="hoverIn(3,3)" ng-mouseleave="hoverOut(3,3)"><a href=""></a><span></span></div>
+                <div class="btn-4-wrapper dot dot-4-gallery-3" ng-mouseover="hoverIn(4,3)" ng-mouseleave="hoverOut(4,3)"><a href=""></a><span></span></div>
+                <div class="btn-4-wrapper dot dot-5-gallery-3" ng-mouseover="hoverIn(5,3)" ng-mouseleave="hoverOut(5,3)"><a href=""></a><span></span></div>
+                
+                <!-- You need to add one of this for every dot and adjust position in CSS -->
+                <div class="text-gallery text-3-gallery-3">
+                  <div class="line-container">
+                    <div class="connection-line"></div>
+                  </div>
+                  <div class="description">
+                    <img src="public/images/gallery-3-detail-1.png" alt="">
+                    <p>99% energy efficient with unparalleled performance, reliability, and flexibility</p>
+                  </div>
                 </div>
-                <div class="description">
-                  <img src="public/images/gallery-3-detail-1.png" alt="">
-                  <p>99% energy efficient with unparalleled performance, reliability, and flexibility</p>
-                </div>
+
               </div>
             </div>
           </div>
@@ -80,8 +87,8 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <button class="btn btn-3-left" ng-hide="activeThumbnail == 1" ng-click="previousImage()"></button>
-            <button class="btn btn-3-right" ng-hide="activeThumbnail == 5" ng-click="nextImage()"></button>
+            <button class="btn btn-3-left hide-xs" ng-hide="activeThumbnail == 1" ng-click="previousImage()"></button>
+            <button class="btn btn-3-right hide-xs" ng-hide="activeThumbnail == 5" ng-click="nextImage()"></button>
             <ul class="list-unstyled clearfix">
               <li class="pull-left" ng-repeat="thumbnail in thumbnails" ng-click="changeImage(thumbnail)" ng-class="{active: activeThumbnail == thumbnail}">
                 <img ng-src="public/images/gallery-thumbnail-{{thumbnail}}.png" alt="" />
@@ -96,10 +103,17 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="list-unstyled clearfix show-xs small-uses-tabs" role="tablist">
+            <li class="active"><a href="#use-1" role="tab" data-toggle="tab"><span></span>1. stand-alone tankless</a></li>
+            <li><a href="#use-2" role="tab" data-toggle="tab"><span></span>2. In-Line Extender</a></li>
+            <li><a href="#use-3" role="tab" data-toggle="tab"><span></span>3. In-Line remote booster</a></li>
+            <li><a href="#use-4" role="tab" data-toggle="tab"><span></span>4. In-Line turbocharger</a></li>
+            <li><a href="#use-5" role="tab" data-toggle="tab"><span></span>5. solar extender</a></li>
+          </ul>
           <div class="tab-content">
-            <div class="tab-pane active" id="use-1">
+            <div class="tab-pane fade in active" id="use-1">
               <h4>Ways to Use your MODEL 1</h4>
-              <h2>1. Replace Existing Tank-Type Water Heater</h2>
+              <h2>1. Replace Existing <br class="show-xs">Tank-Type Water Heater</h2>
               <div class="clearfix">
                 <div class="use-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
@@ -127,16 +141,16 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="use-2">
+            <div class="tab-pane fade" id="use-2">
               <h4>Ways to Use your MODEL 1</h4>
-              <h2>2. Replace Existing Tank-Type Water Heater</h2>
+              <h2>2. Install In-Line with Existing <br class="show-xs">Tank-Type Water Heater</h2>
               <div class="clearfix">
                 <div class="use-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
                 </div>
                 <div class="use-image">
-                  <img src="public/images/use-1-image.png" alt="">
+                  <img src="public/images/use-2-image.png" alt="">
                 </div>
               </div>
               <div class="use-tips clearfix">
@@ -157,16 +171,16 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="use-3">
+            <div class="tab-pane fade" id="use-3">
               <h4>Ways to Use your MODEL 1</h4>
-              <h2>3. Replace Existing Tank-Type Water Heater</h2>
+              <h2>3. Install In-Line with Existing <br class="show-xs">Tank-Type Heater in Remote Locations</h2>
               <div class="clearfix">
                 <div class="use-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
                 </div>
                 <div class="use-image">
-                  <img src="public/images/use-1-image.png" alt="">
+                  <img src="public/images/use-3-image.png" alt="">
                 </div>
               </div>
               <div class="use-tips clearfix">
@@ -187,16 +201,16 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="use-4">
+            <div class="tab-pane fade" id="use-4">
               <h4>Ways to Use your MODEL 1</h4>
-              <h2>4. Replace Existing Tank-Type Water Heater</h2>
+              <h2>4. "Turbocharge" your Existing <br class="show-xs">Tank-Type Water Heater</h2>
               <div class="clearfix">
                 <div class="use-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
                 </div>
                 <div class="use-image">
-                  <img src="public/images/use-1-image.png" alt="">
+                  <img src="public/images/use-4-image.png" alt="">
                 </div>
               </div>
               <div class="use-tips clearfix">
@@ -217,16 +231,16 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="use-5">
+            <div class="tab-pane fade" id="use-5">
               <h4>Ways to Use your MODEL 1</h4>
-              <h2>5. Replace Existing Tank-Type Water Heater</h2>
+              <h2>5. Install Unit as Extender from Solar Unit</h2>
               <div class="clearfix">
                 <div class="use-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
                 </div>
                 <div class="use-image">
-                  <img src="public/images/use-1-image.png" alt="">
+                  <img src="public/images/use-5-image.png" alt="">
                 </div>
               </div>
               <div class="use-tips clearfix">
@@ -252,7 +266,7 @@
       </div>
     </div>
   </div>
-  <div id="uses-tabs-links">
+  <div id="uses-tabs-links" class="hide-xs">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -278,7 +292,7 @@
             <li class="savings-link-3"><a href="#saving-tab-3" role="tab" data-toggle="tab"><span></span>Money</a></li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane active" id="saving-tab-1">
+            <div class="tab-pane fade in active" id="saving-tab-1">
               <div class="clearfix">
                 <div class="savings-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit.</strong></p>
@@ -291,21 +305,23 @@
                     <li><a href="#saving-inner-tab-2" role="tab" data-toggle="tab"><span></span>Annually</a></li>
                   </ul>
                   <div class="tab-content">
-                    <div class="tab-pane active" id="saving-inner-tab-1">
+                    <div class="tab-pane fade in active" id="saving-inner-tab-1">
                       <img class="show-l" src="public/images/graph-l.png" alt="">
                       <img class="show-m" src="public/images/graph-m.png" alt="">
                       <img class="show-s" src="public/images/graph-s.png" alt="">
+                      <img class="show-xs" src="public/images/graph-xs.png" alt="">
                     </div>
-                    <div class="tab-pane" id="saving-inner-tab-2">
+                    <div class="tab-pane fade" id="saving-inner-tab-2">
                       <img class="show-l" src="public/images/graph-l.png" alt="">
                       <img class="show-m" src="public/images/graph-m.png" alt="">
                       <img class="show-s" src="public/images/graph-s.png" alt="">
+                      <img class="show-xs" src="public/images/graph-xs.png" alt="">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="saving-tab-2">
+            <div class="tab-pane fade" id="saving-tab-2">
               <div class="clearfix">
                 <div class="savings-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit.</strong></p>
@@ -318,21 +334,23 @@
                     <li><a href="#saving-inner-tab-2" role="tab" data-toggle="tab"><span></span>Annually</a></li>
                   </ul>
                   <div class="tab-content">
-                    <div class="tab-pane active" id="saving-inner-tab-1">
+                    <div class="tab-pane fade in active" id="saving-inner-tab-1">
                       <img class="show-l" src="public/images/graph-l.png" alt="">
                       <img class="show-m" src="public/images/graph-m.png" alt="">
                       <img class="show-s" src="public/images/graph-s.png" alt="">
+                      <img class="show-xs" src="public/images/graph-xs.png" alt="">
                     </div>
-                    <div class="tab-pane" id="saving-inner-tab-2">
+                    <div class="tab-pane fade" id="saving-inner-tab-2">
                       <img class="show-l" src="public/images/graph-l.png" alt="">
                       <img class="show-m" src="public/images/graph-m.png" alt="">
                       <img class="show-s" src="public/images/graph-s.png" alt="">
+                      <img class="show-xs" src="public/images/graph-xs.png" alt="">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="saving-tab-3">
+            <div class="tab-pane fade" id="saving-tab-3">
               <div class="clearfix">
                 <div class="savings-description">
                   <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit.</strong></p>
@@ -345,15 +363,17 @@
                     <li><a href="#saving-inner-tab-2" role="tab" data-toggle="tab"><span></span>Annually</a></li>
                   </ul>
                   <div class="tab-content">
-                    <div class="tab-pane active" id="saving-inner-tab-1">
+                    <div class="tab-pane fade in active" id="saving-inner-tab-1">
                       <img class="show-l" src="public/images/graph-l.png" alt="">
                       <img class="show-m" src="public/images/graph-m.png" alt="">
                       <img class="show-s" src="public/images/graph-s.png" alt="">
+                      <img class="show-xs" src="public/images/graph-xs.png" alt="">
                     </div>
-                    <div class="tab-pane" id="saving-inner-tab-2">
+                    <div class="tab-pane fade" id="saving-inner-tab-2">
                       <img class="show-l" src="public/images/graph-l.png" alt="">
                       <img class="show-m" src="public/images/graph-m.png" alt="">
                       <img class="show-s" src="public/images/graph-s.png" alt="">
+                      <img class="show-xs" src="public/images/graph-xs.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -369,7 +389,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h2>Start saving money today</h2>
-          <div class="clearfix">
+          <div class="clearfix hide-xs">
             <div class="buy-cta buy-cta-1">
               <img src="public/images/buy-cta-1.png" alt="">
               <h4>1. Replace</h4>
@@ -385,6 +405,36 @@
               <h4>3. Save</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
             </div>
+          </div>
+          <div class="show-xs buy-cta-tabs">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="cta-tab-1">
+                <div class="buy-cta buy-cta-1">
+                  <img src="public/images/buy-cta-1.png" alt="">
+                  <h4>1. Replace</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cta-tab-2">
+                <div class="buy-cta buy-cta-2">
+                  <img src="public/images/buy-cta-2.png" alt="">
+                  <h4>2. Install</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cta-tab-3">
+                <div class="buy-cta buy-cta-3">
+                  <img src="public/images/buy-cta-3.png" alt="">
+                  <h4>3. Save</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled" role="tablist">
+              <li class="active"><a href="#cta-tab-1" role="tab" data-toggle="tab">1</a></li>
+              <li><a href="#cta-tab-2" role="tab" data-toggle="tab">2</a></li>
+              <li><a href="#cta-tab-3" role="tab" data-toggle="tab">3</a></li>
+            </ul>
           </div>
           <div class="cta-btn">
             <img src="public/images/text-1.png" alt="">
@@ -408,7 +458,7 @@
                 </fieldset>
               </form>
             </div>
-            <div class="social pull-right">
+            <div class="social pull-right hide-xs">
               <h5>We are social</h5>
               <ul class="list-unstyled social">
                 <li><a href="https://www.facebook.com/HEATWORKSMODEL1" class="fb" target="_blank">Facebook</a></li>
