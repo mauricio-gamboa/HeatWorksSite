@@ -136,6 +136,7 @@ Bottons Styles
 }
 
 .my-btn-1:hover {
+  background-color: #df3543;
   color: #FFFFFF;
 }
 
@@ -348,7 +349,7 @@ Home Video Styles
 #home-video p {
   margin-bottom: 5px;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 23px;
   color: #FFFFFF;
 }
 
@@ -438,49 +439,64 @@ Gallery Styles
 .gallery-image {
   text-align: center;
   display: none;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.gallery-image-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 340px;
+}
+
+.gallery-image-wrapper img {
+  width: 100%;
 }
 
 .gallery-image.active {
   display: block;
+  opacity: 1;
 }
 
 .dot-1-gallery-3 {
-  left: auto;
-  right: 452px;
-  top: 175px;
+  left: 50px;
+  top: 45px;
 }
 
 .dot-2-gallery-3 {
-  left: 461px;
-  top: 151px;
+  left: auto;
+  right: 40px;
+  top: 70px;
 }
 
 .dot-3-gallery-3 {
-  left: 475px;
-  top: 330px;
+  left: 62px;
+  top: 222px;
 }
 
 .dot-4-gallery-3 {
   left: auto;
-  right: 475px;
-  top: 320px;
+  right: 58px;
+  top: 206px;
 }
 
 .dot-5-gallery-3 {
-  bottom: 90px;
   left: 50%;
   margin-left: -28px;
-  top: auto;
+  top: 347px;
 }
 
 .text-gallery {
   visibility: hidden;
   position: absolute;
   width: 205px;
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .text-gallery.current {
   visibility: visible;
+  opacity: 1;
 }
 
 .text-gallery p {
@@ -492,8 +508,8 @@ Gallery Styles
 }
 
 .text-3-gallery-3 {
-  left: 121px;
-  top: 255px;
+  left: -295px;
+  top: 140px;
 }
 
 .line-container {
@@ -586,8 +602,9 @@ Uses Tabs Styles
 }
 
 .use-tips .use-tip {
-  font-family: 'open_sanssemibold';
   float: left;
+  font-family: 'open_sanssemibold';
+  overflow: hidden;
   width: 33.33%;
 }
 
@@ -649,35 +666,37 @@ Uses Tabs Styles
   display: block;
   margin: 0 auto 12px auto;
   height: 41px;
+  width: 41px;
+}
+
+#uses-tabs-links ul li a:hover span {
+  background-position: 0 -41px;
 }
 
 #uses-tabs-links ul li.active a span {
-  background-position: 0 -41px;
+  background-position: 0 -82px;
 }
 
 .use-link-1 a span {
   background: url("../images/uses-tabs-icon-1.png") no-repeat 0 0;
-  width: 40px;
+  width: 40px !important;
 }
 
 .use-link-2 a span {
   background: url("../images/uses-tabs-icon-2.png") no-repeat 0 0;
-  width: 41px;
 }
 
 .use-link-3 a span {
   background: url("../images/uses-tabs-icon-3.png") no-repeat 0 0;
-  width: 36px;
 }
 
 .use-link-4 a span {
   background: url("../images/uses-tabs-icon-4.png") no-repeat 0 0;
-  width: 41px;
+  width: 50px !important;
 }
 
 .use-link-5 a span {
   background: url("../images/uses-tabs-icon-5.png") no-repeat 0 0;
-  width: 41px;
 }
 
 /***************************

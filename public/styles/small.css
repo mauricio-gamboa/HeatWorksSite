@@ -43,29 +43,13 @@
     font-size: 11px;
   }
 
-  .dot-1-gallery-3 {
-    right: 245px;
-    top: 178px;
-  }
-
-  .dot-2-gallery-3 {
-    left: 257px;
-  }
-
-  .dot-3-gallery-3 {
-    left: 265px;
-  }
-
-  .dot-4-gallery-3 {
-    right: 260px;
-  }
-
   .text-3-gallery-3 {
-    left: 0;
+    left: -205px;
+    top: 148px;
   }
 
   .text-3-gallery-3 .line-container {
-    right: -90px;
-    width: 105px;
+    right: -80px;
+    width: 96px;
   }
 }
