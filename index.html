@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="heatWorks">
+<head>
+  <title>HeatWorks Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Styles -->
+  <link rel="stylesheet" href="public/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="public/styles/styles.css">
+  <link rel="stylesheet" href="public/styles/large.css">
+  <link rel="stylesheet" href="public/styles/medium.css">
+  <link rel="stylesheet" href="public/styles/small.css">
+  <link rel="stylesheet" href="public/styles/xs.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="logo pull-left"><a href="">HeatWorks Model 1</a></h1>
+          <nav>
+            <ul class="ht-nav pull-right">
+              <li class="active"><a href="">Home</a></li>
+              <li><a href="">Our Technology</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><button class="btn my-btn-1"><span></span>Buy</button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="home-video">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1>Your next water heater</h1>
+          <p>The world wastes too much energy and water.</p>
+          <p>We are redefining how the world heats and uses water.</p>
+          <div class="btn-2-wrapper">
+            <a href=""></a>
+            <span></span>
+          </div>
+          <a href="" class="go-to"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div ng-controller="GalleryCtrl">
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>The World's First Digital Water Heater</h2>
+            <div class="gallery-image" ng-repeat="thumbnail in thumbnails" ng-class="{active: activeThumbnail == thumbnail}">
+              <img src="public/images/gallery-1.png" alt="">
+
+              <div class="btn-4-wrapper dot dot-1-gallery-3" ng-mouseover="hoverIn(1,3)" ng-mouseleave="hoverOut(1,3)"><a href=""></a><span></span></div>
+              <div class="btn-4-wrapper dot dot-2-gallery-3" ng-mouseover="hoverIn(2,3)" ng-mouseleave="hoverOut(2,3)"><a href=""></a><span></span></div>
+              <div class="btn-4-wrapper dot dot-3-gallery-3" ng-mouseover="hoverIn(3,3)" ng-mouseleave="hoverOut(3,3)"><a href=""></a><span></span></div>
+              <div class="btn-4-wrapper dot dot-4-gallery-3" ng-mouseover="hoverIn(4,3)" ng-mouseleave="hoverOut(4,3)"><a href=""></a><span></span></div>
+              <div class="btn-4-wrapper dot dot-5-gallery-3" ng-mouseover="hoverIn(5,3)" ng-mouseleave="hoverOut(5,3)"><a href=""></a><span></span></div>
+
+              <div class="text-gallery text-3-gallery-3">
+                <div class="line-container">
+                  <div class="connection-line"></div>
+                </div>
+                <div class="description">
+                  <img src="public/images/gallery-3-detail-1.png" alt="">
+                  <p>99% energy efficient with unparalleled performance, reliability, and flexibility</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="thumbnails">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <button class="btn btn-3-left" ng-hide="activeThumbnail == 1" ng-click="previousImage()"></button>
+            <button class="btn btn-3-right" ng-hide="activeThumbnail == 5" ng-click="nextImage()"></button>
+            <ul class="list-unstyled clearfix">
+              <li class="pull-left" ng-repeat="thumbnail in thumbnails" ng-click="changeImage(thumbnail)" ng-class="{active: activeThumbnail == thumbnail}">
+                <img ng-src="public/images/gallery-thumbnail-{{thumbnail}}.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="uses-tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="tab-content">
+            <div class="tab-pane active" id="use-1">
+              <h4>Ways to Use your MODEL 1</h4>
+              <h2>1. Replace Existing Tank-Type Water Heater</h2>
+              <div class="clearfix">
+                <div class="use-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
+                </div>
+                <div class="use-image">
+                  <img src="public/images/use-1-image.png" alt="">
+                </div>
+              </div>
+              <div class="use-tips clearfix">
+                <div class="use-tip">
+                  <img src="public/images/use-tip-1.png" alt="">
+                  <strong class="label">40%</strong>
+                  <span>Energy Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-2.png" alt="">
+                  <strong class="label">10%</strong>
+                  <span>Water Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-3.png" alt="">
+                  <strong class="label">&lt;0.5 GPM</strong>
+                  <span>Low flow GPM Operation</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="use-2">
+              <h4>Ways to Use your MODEL 1</h4>
+              <h2>2. Replace Existing Tank-Type Water Heater</h2>
+              <div class="clearfix">
+                <div class="use-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
+                </div>
+                <div class="use-image">
+                  <img src="public/images/use-1-image.png" alt="">
+                </div>
+              </div>
+              <div class="use-tips clearfix">
+                <div class="use-tip">
+                  <img src="public/images/use-tip-1.png" alt="">
+                  <strong class="label">40%</strong>
+                  <span>Energy Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-2.png" alt="">
+                  <strong class="label">10%</strong>
+                  <span>Water Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-3.png" alt="">
+                  <strong class="label">&lt;0.5 GPM</strong>
+                  <span>Low flow GPM Operation</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="use-3">
+              <h4>Ways to Use your MODEL 1</h4>
+              <h2>3. Replace Existing Tank-Type Water Heater</h2>
+              <div class="clearfix">
+                <div class="use-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
+                </div>
+                <div class="use-image">
+                  <img src="public/images/use-1-image.png" alt="">
+                </div>
+              </div>
+              <div class="use-tips clearfix">
+                <div class="use-tip">
+                  <img src="public/images/use-tip-1.png" alt="">
+                  <strong class="label">40%</strong>
+                  <span>Energy Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-2.png" alt="">
+                  <strong class="label">10%</strong>
+                  <span>Water Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-3.png" alt="">
+                  <strong class="label">&lt;0.5 GPM</strong>
+                  <span>Low flow GPM Operation</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="use-4">
+              <h4>Ways to Use your MODEL 1</h4>
+              <h2>4. Replace Existing Tank-Type Water Heater</h2>
+              <div class="clearfix">
+                <div class="use-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
+                </div>
+                <div class="use-image">
+                  <img src="public/images/use-1-image.png" alt="">
+                </div>
+              </div>
+              <div class="use-tips clearfix">
+                <div class="use-tip">
+                  <img src="public/images/use-tip-1.png" alt="">
+                  <strong class="label">40%</strong>
+                  <span>Energy Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-2.png" alt="">
+                  <strong class="label">10%</strong>
+                  <span>Water Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-3.png" alt="">
+                  <strong class="label">&lt;0.5 GPM</strong>
+                  <span>Low flow GPM Operation</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="use-5">
+              <h4>Ways to Use your MODEL 1</h4>
+              <h2>5. Replace Existing Tank-Type Water Heater</h2>
+              <div class="clearfix">
+                <div class="use-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit amet.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices. Quisque vel arcu a turpis posuere varius at tincidunt nulla.</p>
+                </div>
+                <div class="use-image">
+                  <img src="public/images/use-1-image.png" alt="">
+                </div>
+              </div>
+              <div class="use-tips clearfix">
+                <div class="use-tip">
+                  <img src="public/images/use-tip-1.png" alt="">
+                  <strong class="label">40%</strong>
+                  <span>Energy Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-2.png" alt="">
+                  <strong class="label">10%</strong>
+                  <span>Water Savings</span>
+                </div>
+                <div class="use-tip">
+                  <img src="public/images/use-tip-3.png" alt="">
+                  <strong class="label">&lt;0.5 GPM</strong>
+                  <span>Low flow GPM Operation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="uses-tabs-links">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="list-unstyled clearfix" role="tablist">
+            <li class="use-link-1 active"><a href="#use-1" role="tab" data-toggle="tab"><span></span>1. stand-alone tankless</a></li>
+            <li class="use-link-2"><a href="#use-2" role="tab" data-toggle="tab"><span></span>2. In-Line Extender</a></li>
+            <li class="use-link-3"><a href="#use-3" role="tab" data-toggle="tab"><span></span>3. In-Line remote booster</a></li>
+            <li class="use-link-4"><a href="#use-4" role="tab" data-toggle="tab"><span></span>4. In-Line turbocharger</a></li>
+            <li class="use-link-5"><a href="#use-5" role="tab" data-toggle="tab"><span></span>5. solar extender</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="saving-tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>The savings rate that maximizes consumption in every way</h2>
+          <ul class="list-unstyled savings-links" role="tablist">
+            <li class="active savings-link-1"><a href="#saving-tab-1" role="tab" data-toggle="tab"><span></span>Water</a></li>
+            <li class="savings-link-2"><a href="#saving-tab-2" role="tab" data-toggle="tab"><span></span>Energy</a></li>
+            <li class="savings-link-3"><a href="#saving-tab-3" role="tab" data-toggle="tab"><span></span>Money</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="saving-tab-1">
+              <div class="clearfix">
+                <div class="savings-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices.</p>
+                </div>
+                <div class="savings-inner-tabs">
+                  <h4>Water Consumption</h4>
+                  <ul class="list-unstyled savings-inner-links" role="tablist">
+                    <li class="active"><a href="#saving-inner-tab-1" role="tab" data-toggle="tab"><span></span>Montly</a></li>
+                    <li><a href="#saving-inner-tab-2" role="tab" data-toggle="tab"><span></span>Annually</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="saving-inner-tab-1">
+                      <img src="public/images/graph-1.png" alt="">
+                    </div>
+                    <div class="tab-pane" id="saving-inner-tab-2">
+                      <img src="public/images/graph-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="saving-tab-2">
+              <div class="clearfix">
+                <div class="savings-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices.</p>
+                </div>
+                <div class="savings-inner-tabs">
+                  <h4>Energy Consumption</h4>
+                  <ul class="list-unstyled savings-inner-links" role="tablist">
+                    <li class="active"><a href="#saving-inner-tab-1" role="tab" data-toggle="tab"><span></span>Montly</a></li>
+                    <li><a href="#saving-inner-tab-2" role="tab" data-toggle="tab"><span></span>Annually</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="saving-inner-tab-1">
+                      <img src="public/images/graph-1.png" alt="">
+                    </div>
+                    <div class="tab-pane" id="saving-inner-tab-2">
+                      <img src="public/images/graph-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="saving-tab-3">
+              <div class="clearfix">
+                <div class="savings-description">
+                  <p><strong>Integer iaculis consectetur metus, ac posuere tellus lobortis sit.</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel cursus ante. Donec porta felis in ipsum aliquet ultrices.</p>
+                </div>
+                <div class="savings-inner-tabs">
+                  <h4>Money Consumption</h4>
+                  <ul class="list-unstyled savings-inner-links" role="tablist">
+                    <li class="active"><a href="#saving-inner-tab-1" role="tab" data-toggle="tab"><span></span>Montly</a></li>
+                    <li><a href="#saving-inner-tab-2" role="tab" data-toggle="tab"><span></span>Annually</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="saving-inner-tab-1">
+                      <img src="public/images/graph-1.png" alt="">
+                    </div>
+                    <div class="tab-pane" id="saving-inner-tab-2">
+                      <img src="public/images/graph-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="buy-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Start saving money today</h2>
+          <div class="clearfix">
+            <div class="buy-cta buy-cta-1">
+              <img src="public/images/buy-cta-1.png" alt="">
+              <h4>1. Replace</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
+            </div>
+            <div class="buy-cta buy-cta-2">
+              <img src="public/images/buy-cta-2.png" alt="">
+              <h4>2. Install</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
+            </div>
+            <div class="buy-cta buy-cta-3">
+              <img src="public/images/buy-cta-3.png" alt="">
+              <h4>3. Save</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula nunc.</p>
+            </div>
+          </div>
+          <div class="cta-btn">
+            <img src="public/images/text-1.png" alt="">
+            <button class="btn my-btn-1">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="clearfix footer-wrapper">
+            <div class="letter pull-left">
+              <h5 id="sign-up-confirm">Get the Latest news &amp; product updates</h5>
+              <form id="subscribe-form" novalidate="novalidate">
+                <fieldset>
+                  <input type="text" required="" placeholder="Enter you email address" id="subscribe-email" name="subscribe" aria-required="true">
+                  <input type="submit" value="Subscribe" class="btn my-btn-1" id="subscribe-button">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social pull-right">
+              <h5>We are social</h5>
+              <ul class="list-unstyled social">
+                <li><a href="https://www.facebook.com/HEATWORKSMODEL1" class="fb" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/HW_MODEL_1" class="tw" target="_blank">Twitter</a></li>
+                <li><a href="http://vimeo.com/user23793737/videos" class="vm" target="_blank">Vimeo</a></li>
+                <li><a href="http://www.youtube.com/channel/UC2RvMDebcZRVUq3gUx4hNdg/videos" class="yt" target="_blank">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="bottom" class="clearfix">
+            <p class="pull-left">*ISI Technology &amp; the Heatworks MODEL1 are covered by multiple US &amp; International Patents.</p>
+            <ul class="list-unstyled pull-right">
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="public/js/lib/jquery.min.js"></script>
+  <script src="public/js/lib/bootstrap.min.js"></script>
+  <script src="public/js/lib/angular.min.js"></script>
+  <script src="public/js/app.js"></script>
+  <script src="public/js/controllers/galleryCtrl.js"></script>
+</body>
+</html>
