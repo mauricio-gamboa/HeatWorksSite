@@ -7,6 +7,10 @@
     display: block;
   }
 
+  .mobile-nav ul a {
+    background-position: 95% 50%;
+  }
+
   #home-video {
     background-position: -240px top;
     height: 600px;
