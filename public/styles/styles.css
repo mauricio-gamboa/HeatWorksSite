@@ -163,7 +163,8 @@ Bottons Styles
   width: 153px;
 }
 
-.btn-2-wrapper a {
+.btn-2-wrapper a,
+.btn-2-wrapper button {
   background: url("../images/btn-2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   display: block;
   height: 72px;
@@ -173,9 +174,11 @@ Bottons Styles
   top: 41px;
   width: 72px;
   z-index: 3;
+  border: none;
 }
 
-.btn-2-wrapper a + span {
+.btn-2-wrapper a + span,
+.btn-2-wrapper button + span {
   background: url("../images/btn-2-circle.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   display: block;
   height: 159px;
@@ -1088,5 +1091,26 @@ Savings Uses Styles
 }
 
 .savings-inner-tabs .tab-pane > img {
+  width: 100%;
+}
+
+/***************************
+****************************
+Modal Video Styles
+****************************
+***************************/
+
+.videoWrapper {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  position: relative;
+}
+
+.videoWrapper iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }

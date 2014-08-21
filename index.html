@@ -61,10 +61,10 @@
           <p>The world wastes too much energy and water.</p>
           <p>We are redefining how the world heats and uses water.</p>
           <div class="btn-2-wrapper">
-            <a href=""></a>
+            <button data-target="#myModal" data-toggle="modal"></button>
             <span></span>
           </div>
-          <a href="" class="go-to"></a>
+          <a href="#gallery" class="inner-link go-to"></a>
         </div>
       </div>
     </div>
@@ -501,10 +501,16 @@
       </div>
     </div>
   </footer>
+  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="videoWrapper" id="theVideo">
+        <iframe width="560" height="349" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/_DljuUhlhMA"></iframe>
+      </div>
+    </div>
+  </div>
   <script src="public/js/lib/jquery.min.js"></script>
   <script src="public/js/lib/bootstrap.min.js"></script>
   <script src="public/js/lib/angular.min.js"></script>
   <script src="public/js/app.js"></script>
-  <script src="public/js/controllers/galleryCtrl.js"></script>
 </body>
 </html>
