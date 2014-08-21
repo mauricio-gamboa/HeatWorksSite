@@ -1129,3 +1129,170 @@ Modal Video Styles
   top: 0;
   width: 100%;
 }
+
+/***************************
+****************************
+About Page Styles
+****************************
+***************************/
+
+.my-page-header {
+  height: 358px;
+  padding-top: 170px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.my-page-header h1 {
+  color: #ffffff;
+  font-size: 58px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.my-page-header p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#page-header-about {
+  background: url("../images/header-about.png") repeat scroll center top / cover  rgba(0, 0, 0, 0);
+}
+
+#ceo h2,
+#about-text h2,
+#team-tabs h2,
+.ceo-text h2 {
+  margin-bottom: 20px;
+}
+
+#ceo p,
+#about-text p,
+#team-tabs p,
+.ceo-text p {
+  color: #616971;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+#ceo p:last-child,
+#about-text p:last-child,
+#team-tabs p:last-child,
+.ceo-text p:last-child {
+  margin-bottom: 0;
+}
+
+#about-text {
+  padding: 61px 0;
+}
+
+.about-logo {
+  float: left;
+  width: 142px;
+}
+
+.about-logo img {
+  width: 100%;
+}
+
+.about-text {
+  width: 970px;
+  float: right;
+}
+
+#ceo {
+  background-color: #f2f5f7;
+  padding: 68px 0;
+}
+
+.ceo-text {
+  padding-left: 400px;
+}
+
+#ceo img {
+  position: absolute;
+  left: 0;
+  bottom: -68px;
+}
+
+.social-2 {
+  margin: 0;
+}
+
+.social-2 a {
+  background: url("../images/social-icons-2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 41px;
+  width: 42px;
+}
+
+.social-2 .tw {
+  background-position: 0 0;
+}
+
+.social-2 .tw:hover {
+  background-position: 0 -41px;
+}
+
+.social-2 .li {
+  background-position: 0 -82px;
+}
+
+.social-2 .li:hover {
+  background-position: 0 -123px;
+}
+
+#team-tabs {
+  background: url("../images/bg-4.png") repeat-x scroll 0 0 #ffffff;
+  border-bottom: 1px solid #f4f4f4;
+  height: 516px;
+  padding-bottom: 60px;
+  padding-top: 75px;
+}
+
+#team-tabs h2 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.team-tabs-links {
+  margin: 0 0 70px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.team-tabs-links li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.team-tabs-links li a img {
+  width: 49px;
+  height: 49px;
+  display: block;
+  opacity: 0.4;
+}
+
+.team-tabs-links li.active a img {
+  opacity: 1;
+}
+
+.member-image {
+  float: left;
+  width: 380px;
+}
+
+.member-image > img {
+  float: left;
+  margin-right: 25px;
+}
+
+.member-text {
+  float: right;
+  width: 670px;
+  line-height: 27px;
+}
+
+#team-tabs .member-image p {
+  margin-bottom: 20px;
+}

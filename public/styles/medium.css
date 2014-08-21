@@ -31,4 +31,24 @@
   .buy-cta {
     padding: 0 42px;
   }
+
+  .about-logo {
+    width: 123px;
+  }
+
+  .about-text {
+    width: 780px;
+  }
+
+  .ceo-text {
+    padding-left: 320px;
+  }
+
+  .member-image > img {
+    width: 140px;
+  }
+
+  .member-text {
+    width: 537px;
+  }
 }

@@ -367,6 +367,73 @@
     width: 30%;
     float: right;
   }
+
+  .my-page-header h1 {
+    font-size: 40px;
+  }
+
+  .my-page-header p {
+    font-size: 17px;
+  }
+
+  .about-text {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  #ceo {
+    padding: 0;
+    text-align: center;
+  }
+
+  #ceo img {
+    width: 276px;
+    position: static;
+  }
+
+  .ceo-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  #ceo-text {
+    padding: 40px 0;
+  }
+
+  .team-tabs-links li {
+    margin: 0 3px;
+  }
+
+  #team-tabs {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .member-image {
+    float: none;
+    width: 100%;
+  }
+
+  .member-image > img {
+    float: none;
+    margin: 0 0 35px;
+  }
+
+  .member-text {
+    float: none;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .team-tabs-links {
+    margin-bottom: 35px;
+  }
+
+  #team-tabs h2 {
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 335px) {
