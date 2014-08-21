@@ -125,6 +125,7 @@ Bottons Styles
 
 .my-btn-1 {
   background-color: #e74748;
+  border: medium none;
   color: #ffffff;
   font-family: 'proxima_novasemibold';
   height: 35px;
@@ -370,13 +371,24 @@ header .ht-nav li.active a {
   border-bottom: 1px solid #d33e45;
 }
 
-.mobile-nav ul a {
+.mobile-nav ul li a {
   background: url("../images/arrow-4.png") no-repeat 98% 50%;
   display: block;
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 0 25px;
   line-height: 52px;
+}
+
+.mobile-nav ul li a span {
+  background: url("../images/icon-1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 15px;
+  margin-right: 6px;
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  width: 16px;
 }
 
 .mobile-nav ul a:hover {
