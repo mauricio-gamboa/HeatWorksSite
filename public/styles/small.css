@@ -16,6 +16,10 @@
     width: 235px;
   }
 
+  #uses-tabs {
+    height: 730px;
+  }
+
   #uses-tabs p {
     font-size: 15px;
     line-height: 27px;
