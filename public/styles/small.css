@@ -56,4 +56,37 @@
     right: -80px;
     width: 96px;
   }
+
+  .about-logo {
+    width: 103px;
+  }
+
+  .about-text {
+    width: 599px;
+  }
+
+  #ceo img {
+    width: 276px;
+  }
+
+  .ceo-text {
+    padding-left: 250px;
+  }
+
+  #team-tabs {
+    height: 585px;
+  }
+
+  .member-image > img {
+    width: 166px;
+  }
+
+  .member-text {
+    width: 362px;
+    padding-left: 20px;
+  }
+
+  .member-image {
+    width: 354px;
+  }
 }
