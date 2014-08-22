@@ -51,4 +51,8 @@
   .member-text {
     width: 537px;
   }
+
+  .contact-link {
+    padding-right: 40px;
+  }
 }

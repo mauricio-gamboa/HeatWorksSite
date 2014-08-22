@@ -1458,7 +1458,7 @@ Contact Page Styles
   font-size: 18px;
   height: 47px;
   line-height: 47px;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
   width: 207px;
 }
 
@@ -1501,11 +1501,12 @@ Contact Page Styles
 
 .contact-link {
   margin-bottom: 40px;
-  padding-right: 80px;
+  padding-right: 70px;
 }
 
 .contact-link ul {
-  list-style: none;
+  list-style: none outside none;
+  margin: 0;
 }
 
 .contact-link li {
@@ -1517,19 +1518,30 @@ Contact Page Styles
 }
 
 .contact-link li a {
-  background: url("../images/icon-3.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
   color: #464646;
   display: block;
   font-size: 13px;
-  height: 16px;
-  line-height: 16px;
-  padding-left: 23px;
   text-decoration: underline;
+  position: relative;
+  padding-left: 23px;
 }
 
 .contact-link li a:hover {
-  background-position: 0 -16px;
   color: #e74748;
+}
+
+.contact-link li a span {
+  background: url("../images/icon-3.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.contact-link li a:hover span {
+  background-position: 0 -16px;
 }
 
 .contact-link h4 {
@@ -1577,7 +1589,7 @@ Contact Page Styles
   background: url("../images/sep-1.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
   float: left;
   height: 255px;
-  padding-top: 80px;
+  padding-top: 82px;
   width: 33.33%;
   text-align: center;
 }
@@ -1599,6 +1611,7 @@ Contact Page Styles
   font-size: 17px;
   height: 53px;
   line-height: 53px;
+  margin: 0;
   padding-left: 65px;
 }
 
