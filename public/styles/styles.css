@@ -417,12 +417,6 @@ Home Video Styles
   text-align: center;
 }
 
-#home-video .home-video-wrapper {
-  left: 0;
-  position: fixed;
-  right: 0;
-}
-
 #home-video h1 {
   text-transform: uppercase;
   color: #FFFFFF;
