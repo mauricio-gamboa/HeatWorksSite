@@ -83,7 +83,6 @@ General Styles
 
 body {
   font-family: 'open_sansregular';
-  padding-top: 89px;
 }
 
 .show-xs,
@@ -1154,8 +1153,8 @@ About Page Styles
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  height: 269px;
-  padding-top: 80px;
+  height: 358px;
+  padding-top: 169px;
   text-align: center;
 }
 
