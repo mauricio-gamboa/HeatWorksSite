@@ -1297,3 +1297,327 @@ About Page Styles
 #team-tabs .member-image p {
   margin-bottom: 20px;
 }
+
+/***************************
+****************************
+Contact Page Styles
+****************************
+***************************/
+
+#page-header-contact {
+  background: url("../images/header-contact.jpg") repeat scroll center top / cover  rgba(0, 0, 0, 0);
+}
+
+#form-wrapper {
+  background: url("../images/bg-5.jpg") repeat-x 0 0;
+  width: 770px;
+  margin: 50px auto;
+}
+
+#form-wrapper input[type="text"],
+#form-wrapper input[type="email"],
+#form-wrapper textarea {
+  border: 1px solid #e9e9e9;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 20px -15px #868686 inset;
+  width: 100%;
+  height: 37px;
+  padding: 0 20px;
+  resize: none;
+  border-radius: 5px;
+}
+
+#form-wrapper textarea {
+  min-height: 137px;
+  padding: 20px;
+}
+
+#form-wrapper input[type="text"]:focus,
+#form-wrapper input[type="email"]:focus,
+#form-wrapper textarea:focus {
+  background-color: #ffffff;
+  border: 1px solid #fdafaf;
+  box-shadow: 0 0 18px -7px #ef5657;
+  outline: none;
+}
+
+#form-wrapper fieldset:first-child {
+  text-align: center;
+  padding: 36px 0;
+  border-bottom: 1px solid #e7ebed;
+  line-height: 24px;
+}
+
+#form-wrapper label {
+  color: #1d272d;
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.form-column {
+  float: left;
+  width: 370px;
+}
+
+.form-column + .form-column {
+  float: right;
+}
+
+.form-column > div {
+  margin-bottom: 20px;
+}
+
+.form-column > div:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox,
+.radio {
+  background-color: #eeeff0;
+  border-radius: 100%;
+  display: inline-block;
+  height: 24px;
+  margin: 0;
+  min-height: 0;
+  padding: 0;
+  position: relative;
+  width: 24px;
+}
+
+.checkbox + .checkbox,
+.radio + .radio {
+  margin: 0;
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  float: none;
+  margin: 0;
+  visibility: hidden;
+}
+
+.checkbox label,
+.radio label {
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  z-index: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + label,
+.radio input[type="radio"]:checked + label {
+  background: url("../images/checkbox.jpg") no-repeat 0 0 #8dc63f;
+}
+
+#form-wrapper .checkbox,
+#form-wrapper .radio {
+  margin: 0 2px 0 15px;
+}
+
+.select-wrapper {
+ background: url("../images/select.jpg") no-repeat scroll 100% 0 rgba(0, 0, 0, 0);
+ border-radius: 5px;
+ box-shadow: -1px 2px 3px -3px #000000;
+ height: 37px;
+ width: 100%;
+}
+
+.select-wrapper select {
+  height: 37px;
+  padding-left: 21px;
+  width: 100%;
+
+  -moz-appearance: menulist-text;
+  -webkit-appearance: menulist-text;
+  appearance: menulist-text;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  box-shadow: none;
+  outline: medium none;
+  padding-right: 39px;
+  width: 100%;
+}
+
+.select-wrapper select:focus {
+  outline: medium none;
+}
+
+#form-wrapper fieldset {
+  margin-bottom: 20px;
+}
+
+#form-wrapper .my-btn-1 {
+  display: block;
+  font-size: 18px;
+  height: 47px;
+  line-height: 47px;
+  margin: 0 auto;
+  width: 207px;
+}
+
+#contact-links {
+  background: url("../images/bg-5.jpg") repeat-x 0 0;
+  padding-top: 70px;
+}
+
+#contact-links .container {
+  border-bottom: 1px solid #f4f6f7;
+}
+
+#contact-links h2 {
+  font-family: 'open_sansregular';
+  font-size: 22px;
+  color: #464646;
+  margin-bottom: 35px;
+}
+
+.c-links-left {
+  float: left;
+  width: 66.66%;
+}
+
+.c-links-right {
+  background-color: #f2f5f7;
+  float: left;
+  width: 33.33%;
+  padding: 20px 25px;
+}
+
+.c-links-right .contact-link {
+  padding: 0;
+}
+
+.c-links-left .contact-link {
+  float: left;
+  width: 50%;
+}
+
+.contact-link {
+  margin-bottom: 40px;
+  padding-right: 80px;
+}
+
+.contact-link ul {
+  list-style: none;
+}
+
+.contact-link li {
+  margin-bottom: 22px;
+}
+
+.contact-link li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-link li a {
+  background: url("../images/icon-3.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #464646;
+  display: block;
+  font-size: 13px;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 23px;
+  text-decoration: underline;
+}
+
+.contact-link li a:hover {
+  background-position: 0 -16px;
+  color: #e74748;
+}
+
+.contact-link h4 {
+  background: url("../images/contact-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  font-family: 'open_sansregular';
+  color: #8a8a8a;
+  font-size: 17px;
+  padding-left: 46px;
+  margin-bottom: 28px;
+  height: 37px;
+  line-height: 37px;
+}
+
+.contact-link-1 h4 {
+  background-position: 0 0;
+}
+
+.contact-link-2 h4 {
+  background-position: 0 -37px;
+}
+
+.contact-link-3 h4 {
+  background-position: 0 -74px;
+}
+
+.contact-link-4 h4 {
+  background-position: 0 -111px;
+}
+
+.contact-link-5 h4 {
+  background-position: 0 -148px;
+}
+
+#map {
+  background: url("../images/map.jpg") repeat center top / cover  rgba(0, 0, 0, 0);
+  height: 382px;
+}
+
+#contact-methods {
+  background: url("../images/pattern-1.jpg") repeat-x 50% 100%;
+  height: 255px;
+}
+
+.contact-method {
+  background: url("../images/sep-1.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+  float: left;
+  height: 255px;
+  padding-top: 80px;
+  width: 33.33%;
+  text-align: center;
+}
+
+.contact-method:first-child {
+  text-align: left;
+}
+
+.contact-method:last-child {
+  background: none;
+  text-align: right;
+}
+
+.contact-method p {
+  background: url("../images/contact-methods.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #464646;
+  display: inline-block;
+  font-family: 'open_sanssemibold';
+  font-size: 17px;
+  height: 53px;
+  line-height: 53px;
+  padding-left: 65px;
+}
+
+.contact-method a {
+  color: #464646;
+}
+
+.contact-method a:hover {
+  text-decoration: underline;
+}
+
+.contact-method-1 p {
+  background-position: 0 0;
+}
+
+.contact-method-2 p {
+  background-position: 0 -53px;
+}
+
+.contact-method-3 p {
+  background-position: 0 -106px;
+}
