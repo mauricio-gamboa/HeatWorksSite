@@ -1207,13 +1207,14 @@ About Page Styles
 }
 
 .ceo-text {
-  padding-left: 400px;
+  padding-left: 320px;
 }
 
 #ceo img {
-  position: absolute;
-  left: 0;
   bottom: -68px;
+  left: 0;
+  position: absolute;
+  width: 270px;
 }
 
 .social-2 {
