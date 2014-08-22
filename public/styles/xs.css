@@ -434,6 +434,93 @@
   #team-tabs h2 {
     margin-bottom: 35px;
   }
+
+  #contact-form {
+    background: url("../images/bg-5.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 18px 0 50px 0;
+  }
+
+  #form-wrapper {
+    background: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-column {
+    float: none;
+    width: 100%;
+  }
+
+  .form-column + .form-column {
+    margin-top: 20px;
+  }
+
+  #form-wrapper .my-btn-1 {
+    margin-top: 0;
+  }
+
+  #contact-links {
+    padding-top: 44px;
+  }
+
+  .c-links-left .contact-link,
+  .c-links-right .contact-link,
+  .c-links-left,
+  .c-links-right {
+    float: none;
+    width: 100%;
+  }
+
+  .c-links-left .contact-link,
+  .c-links-right .contact-link {
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact-methods {
+    height: auto;
+    padding: 45px 0 70px 0;
+  }
+
+  .contact-method {
+    background: none;
+    float: none;
+    height: auto;
+    padding: 0;
+    width: 100%;
+    text-align: left !important;
+    margin-bottom: 24px;
+  }
+
+  .contact-method p {
+    font-size: 16px;
+  }
+
+  .contact-method:last-child {
+    margin-bottom: 0;
+  }
+
+  #faq-tabs .faq-nav {
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #faq-tabs .faq-nav li {
+    display: inline-block;
+  }
+
+  #faq-tabs .faq-nav li a {
+    background-color: #e2e4e6;
+    width: 14px;
+    height: 14px;
+    display: block;
+    border-radius: 100%;
+  }
+
+  #faq-tabs .faq-nav li.active a {
+    background-color: #e74748;
+  }
 }
 
 @media (max-width: 335px) {
