@@ -6,4 +6,8 @@
   .show-l {
     display: block;
   }
+
+  .my-page-header {
+  	background-size: 2000px auto;
+  }
 }
