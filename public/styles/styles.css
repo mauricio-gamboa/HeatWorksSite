@@ -83,6 +83,7 @@ General Styles
 
 body {
   font-family: 'open_sansregular';
+  padding-top: 89px;
 }
 
 .show-xs,
@@ -115,6 +116,11 @@ h2 {
   font-family: 'proxima_nova_rgregular';
   font-size: 32px;
   color: #212326;
+}
+
+.sticky-cover {
+  position: relative;
+  z-index: 97;
 }
 
 /***************************
@@ -272,10 +278,10 @@ header {
   height: 89px;
   left: 0;
   padding-bottom: 6px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
 }
 
 header .logo {
@@ -401,10 +407,20 @@ Home Video Styles
 ****************************
 ***************************/
 #home-video {
-  background: url("../images/bg-1.png") repeat center top / cover  rgba(0, 0, 0, 0);
-  height: 936px;
+  background-attachment: fixed;
+  background-image: url("../images/bg-1.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 847px;
+  padding-top: 200px;
   text-align: center;
-  padding-top: 232px;
+}
+
+#home-video .home-video-wrapper {
+  left: 0;
+  position: fixed;
+  right: 0;
 }
 
 #home-video h1 {
@@ -425,7 +441,7 @@ Home Video Styles
   left: 50%;
   margin-left: -29px;
   position: absolute;
-  top: 610px;
+  top: 550px;
 }
 
 #home-video .btn-2-wrapper {
@@ -440,6 +456,7 @@ Gallery Styles
 ****************************
 ***************************/
 #gallery {
+  background-color: #fff;
   height: 712px;
   padding-bottom: 40px;
   padding-top: 68px;
@@ -837,7 +854,7 @@ Footer Styles
 ****************************
 ***************************/
 footer {
-  background: url("../images/footer-bg.png") repeat-x 0 100%;
+  background: url("../images/footer-bg.png") repeat-x 0 100% #FFFFFF;
   padding-bottom: 64px;
   padding-top: 54px;
 }
@@ -975,6 +992,7 @@ Savings Uses Styles
 ****************************
 ***************************/
 #saving-tabs {
+  background-color: #fff;
   height: 702px;
   padding-bottom: 100px;
   padding-top: 80px;
@@ -1137,10 +1155,20 @@ About Page Styles
 ***************************/
 
 .my-page-header {
-  height: 358px;
-  padding-top: 170px;
-  text-align: center;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
+  height: 269px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.my-page-header .page-header-content {
+  left: 0;
+  position: fixed;
+  right: 0;
 }
 
 .my-page-header h1 {
@@ -1156,7 +1184,7 @@ About Page Styles
 }
 
 #page-header-about {
-  background: url("../images/header-about.png") repeat scroll center top / cover  rgba(0, 0, 0, 0);
+  background-image: url("../images/header-about.png");
 }
 
 #ceo h2,
@@ -1305,7 +1333,7 @@ Contact Page Styles
 ***************************/
 
 #page-header-contact {
-  background: url("../images/header-contact.jpg") repeat scroll center top / cover  rgba(0, 0, 0, 0);
+  background-image: url("../images/header-contact.jpg");
 }
 
 #form-wrapper {

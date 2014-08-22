@@ -7,6 +7,14 @@
     display: block;
   }
 
+  #home-video {
+    background-size: auto;
+  }
+
+  .my-page-header {
+    background-size: auto;
+  }
+
   .use-description {
     width: 318px;
   }
