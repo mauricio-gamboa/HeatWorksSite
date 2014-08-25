@@ -88,17 +88,17 @@
               <fieldset class="clearfix">
                 <div class="form-column">
                   <div>
-                    <label for="">Your Name</label>
-                    <input type="text">
+                    <label for="">Your Name <span>(Required)</span></label>
+                    <input type="text" name="name" required>
                   </div>
                   <div>
                     <label for="">Phone</label>
-                    <input type="text">
+                    <input type="text" name="phone">
                   </div>
                   <div>
                     <label for="">Country</label>
                     <div class="select-wrapper">
-                      <select name="" id="">
+                      <select name="country" id="">
                         <option value="">Country</option>
                         <option value="">Country</option>
                         <option value="">Country</option>
@@ -108,17 +108,17 @@
                 </div>
                 <div class="form-column">
                   <div>
-                    <label for="">Email</label>
-                    <input type="email">
+                    <label for="">Email <span>(Required)</span></label>
+                    <input type="email" name="email" required>
                   </div>
                   <div>
                     <label for="">Company</label>
-                    <input type="text">
+                    <input type="text" name="company">
                   </div>
                   <div>
                     <label for="">Type of Inquiry</label>
                     <div class="select-wrapper">
-                      <select name="" id="">
+                      <select name="industry" id="">
                         <option value="">Choose One</option>
                         <option value="">Choose One</option>
                         <option value="">Choose One</option>
@@ -128,8 +128,8 @@
                 </div>
               </fieldset>
               <fieldset>
-                <label for="">project details</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="">project details <span>(Required)</span></label>
+                <textarea name="details" id="" cols="30" rows="10" required></textarea>
               </fieldset>
               <button class="btn my-btn-1">Send Message</button>
             </form>
@@ -294,7 +294,7 @@
               <h5 id="sign-up-confirm">Get the Latest news &amp; product updates</h5>
               <form id="subscribe-form" novalidate="novalidate">
                 <fieldset>
-                  <input type="text" required="" placeholder="Enter you email address" id="subscribe-email" name="subscribe" aria-required="true">
+                  <input type="text" required placeholder="Enter you email address" id="subscribe-email" name="subscribe">
                   <input type="submit" value="Subscribe" class="btn my-btn-1" id="subscribe-button">
                 </fieldset>
               </form>
@@ -320,7 +320,11 @@
       </div>
     </div>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="public/js/lib/jquery.min.js"></script>
   <script src="public/js/lib/bootstrap.min.js"></script>
+  <script src="public/js/lib/angular.min.js"></script>
+  <script src="public/js/app.js"></script>
+  <script src="public/js/lib/jquery.validate.min.js"></script>
 </body>
 </html>

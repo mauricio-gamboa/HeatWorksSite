@@ -331,6 +331,10 @@ header .ht-nav li a {
   line-height: 83px;
 }
 
+header .ht-nav li a:hover {
+  color: #e74748;
+}
+
 header .ht-nav li.active a {
   background: url("../images/arrow-1.png") no-repeat 50% 100%;
 }
@@ -881,6 +885,22 @@ input[type="email"] {
   width: 255px;
 }
 
+.letter input.error, 
+.letter input.error:focus {
+  background-color: #ffeae6;
+  border-color: #ffeae6;
+  box-shadow: 0 0 10px -8px #f26c4f inset;
+  margin-bottom: 22px;
+}
+
+.letter span.error {
+  color: #f26c4f;
+  font-size: 13px;
+  left: 15px;
+  position: absolute;
+  top: 80px;
+}
+
 footer .my-btn-1 {
   border: medium none;
   height: 38px;
@@ -1348,11 +1368,6 @@ Contact Page Styles
   border-radius: 5px;
 }
 
-#form-wrapper textarea {
-  min-height: 137px;
-  padding: 20px;
-}
-
 #form-wrapper input[type="text"]:focus,
 #form-wrapper input[type="email"]:focus,
 #form-wrapper textarea:focus {
@@ -1360,6 +1375,20 @@ Contact Page Styles
   border: 1px solid #fdafaf;
   box-shadow: 0 0 18px -7px #ef5657;
   outline: none;
+}
+
+#form-wrapper input.error, 
+#form-wrapper textarea.error, 
+#form-wrapper input.error:focus, 
+#form-wrapper textarea.error:focus {
+  background-color: #ffeae6;
+  border-color: #ffeae6;
+  box-shadow: 0 0 10px -8px #f26c4f inset;
+}
+
+#form-wrapper textarea {
+  min-height: 137px;
+  padding: 20px;
 }
 
 #form-wrapper fieldset:first-child {
@@ -1377,6 +1406,19 @@ Contact Page Styles
   text-transform: capitalize;
 }
 
+#form-wrapper label span {
+  color: #898989;
+  font-size: 13px;
+}
+
+#form-wrapper span.error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #f26c4f;
+  font-size: 13px;
+}
+
 .form-column {
   float: left;
   width: 370px;
@@ -1388,6 +1430,7 @@ Contact Page Styles
 
 .form-column > div {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .form-column > div:last-child {
@@ -1472,6 +1515,7 @@ Contact Page Styles
 
 #form-wrapper fieldset {
   margin-bottom: 20px;
+  position: relative;
 }
 
 #form-wrapper .my-btn-1 {
@@ -1597,7 +1641,7 @@ Contact Page Styles
 }
 
 #map {
-  background: url("../images/map.jpg") repeat center top / cover  rgba(0, 0, 0, 0);
+  width: 100%;
   height: 382px;
 }
 
